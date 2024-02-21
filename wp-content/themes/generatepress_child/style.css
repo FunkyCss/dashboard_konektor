@@ -1,3 +1,13 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
 /* GeneratePress Site CSS */ /* Side menu CSS */
 
 @media (min-width: 769px) {
@@ -392,4 +402,3 @@ form .button input:hover {
 .form button:hover {
   background-color: #e85a2b;
 }
-
