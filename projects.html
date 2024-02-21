@@ -31,6 +31,7 @@
       <style id="generate-navigation-branding-inline-css">@media (max-width: 768px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}}.main-navigation.has-branding.grid-container .navigation-branding, .main-navigation.has-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left:10px;}.navigation-branding img, .site-logo.mobile-header-logo img{height:60px;width:auto;}.navigation-branding .main-title{line-height:60px;}@media (max-width: 1010px){#site-navigation .navigation-branding, #sticky-navigation .navigation-branding{margin-left:10px;}}@media (max-width: 768px){.main-navigation.has-branding.nav-align-center .menu-bar-items, .main-navigation.has-sticky-branding.navigation-stick.nav-align-center .menu-bar-items{margin-left:auto;}.navigation-branding{margin-right:auto;margin-left:10px;}.navigation-branding .main-title, .mobile-header-navigation .site-logo{margin-left:10px;}}</style>
       <link rel="canonical" href="./index.html">
       <link rel="shortlink" href="./index.html">
+      <link rel="import" href="components/form.html">
       <script src="https://unpkg.com/@phosphor-icons/web"></script>
       <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
    </head>
@@ -145,36 +146,10 @@
                                     <!-- Include Form -->
 
                                     <script>
-                                        function includeHTML() {
-                                          var z, i, elmnt, file, xhttp;
-                                          /*loop through a collection of all HTML elements:*/
-                                          z = document.getElementsByTagName("*");
-                                          for (i = 0; i < z.length; i++) {
-                                            elmnt = z[i];
-                                            /*search for elements with a certain attribute:*/
-                                            file = elmnt.getAttribute("w3-include-html");
-                                            if (file) {
-                                              /*make an HTTP request using the attribute value as the file name:*/
-                                              xhttp = new XMLHttpRequest();
-                                              xhttp.onreadystatechange = function() {
-                                                if (this.readyState == 4) {
-                                                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                                                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                                                  /*remove the attribute, and call this function once more:*/
-                                                  elmnt.removeAttribute("w3-include-html");
-                                                  includeHTML();
-                                                }
-                                              }      
-                                              xhttp.open("GET", file, true);
-                                              xhttp.send();
-                                              /*exit the function:*/
-                                              return;
-                                            }
-                                          }
-                                        };
-                                        </script>
-                                 
-                                    <div w3-include-html="/components/form.html"></div>
+                                       var link = document.querySelector('link[rel="import"]');
+                                       var content = link.import;
+                                       document.body.appendChild(content.documentElement);
+                                   </script>
 
 
                               </div>
