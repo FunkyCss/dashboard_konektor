@@ -135,33 +135,11 @@
          <div class="site-content" id="content">
             <div class="content-area" id="primary">
                <main class="site-main" id="main">
-                  <article id="post-22" class="post-22 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope>
-                     <div class="inside-article">
-                        <div class="entry-content" itemprop="text">
-                           <div class="gb-container gb-container-8ecef3d3">
-                              <div class="gb-container gb-container-84c193bd">
-                                 <h3 class="gb-headline gb-headline-a0631c53 gb-headline-text">Add Project Component </h3>
-                              
-                                    <!-- Include Form -->
-
-                                    <div id="formContainer"></div>
-                                    <script>
-                                        var xhr = new XMLHttpRequest();
-                                        xhr.open('GET', './components/form.html', true);
-                                        xhr.onreadystatechange = function () {
-                                            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                                                document.getElementById('formContainer').innerHTML = xhr.responseText;
-                                            }
-                                        };
-                                        xhr.send();
-                                    </script>
 
 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </article>
+                  <object type="text/html" data="components/form.html"></object>
+
+
                </main>
             </div>
          </div>
