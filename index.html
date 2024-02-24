@@ -1,241 +1,127 @@
 <!DOCTYPE html>
-<html lang="el">
-   <head>
-      <meta charset="UTF-8">
-      <title>KonektorX - Dashboard</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
-      <link href="https://fonts.googleapis.com/" crossorigin rel="preconnect">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extensions.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-      <link rel="stylesheet" id="generate-style-css" href="./wp-content/themes/generatepress/assets/css/main.min.css" media="all">
-      <style id="generate-style-inline-css">.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:100%;}@media (max-width: 768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}}
-         .dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
-      </style>
-      <link rel="stylesheet" id="generate-google-fonts-css" href="https://fonts.googleapis.com/css?family=Oswald%3A200%2C300%2Cregular%2C500%2C600%2C700&#038;display=auto&#038" media="all">
-      <link rel="stylesheet" id="generatepress-dynamic-css" href="./wp-content/uploads/generatepress/main.min.css" media="all">
-      <link rel="stylesheet" id="generate-child-css" href="./wp-content/themes/generatepress_child/style.css" media="all">
-      <link rel="stylesheet" id="generateblocks-css" href="./wp-content/uploads/generateblocks/style-22.css" media="all">
-      <link rel="stylesheet" id="generate-offside-css" href="./wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css" media="all">
-      <style id="generate-offside-inline-css">:root{--gp-slideout-width:265px;}.slideout-navigation, .slideout-navigation a{color:var(--contrast);}.slideout-navigation button.slideout-exit{color:var(--contrast);padding-left:20px;padding-right:20px;}.slide-opened nav.toggled .menu-toggle:before{display:none;}@media (max-width: 768px){.menu-bar-item.slideout-toggle{display:none;}}</style>
-      <link rel="stylesheet" id="generate-navigation-branding-css" href="./wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css" media="all">
-      <style id="generate-navigation-branding-inline-css">@media (max-width: 768px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}}.main-navigation.has-branding.grid-container .navigation-branding, .main-navigation.has-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left:10px;}.navigation-branding img, .site-logo.mobile-header-logo img{height:60px;width:auto;}.navigation-branding .main-title{line-height:60px;}@media (max-width: 1010px){#site-navigation .navigation-branding, #sticky-navigation .navigation-branding{margin-left:10px;}}@media (max-width: 768px){.main-navigation.has-branding.nav-align-center .menu-bar-items, .main-navigation.has-sticky-branding.navigation-stick.nav-align-center .menu-bar-items{margin-left:auto;}.navigation-branding{margin-right:auto;margin-left:10px;}.navigation-branding .main-title, .mobile-header-navigation .site-logo{margin-left:10px;}}</style>
-   </head>
-
-
-      <!-- #body -->
-   <body class="home page-template-default page page-id-22 wp-embed-responsive slideout-enabled slideout-both sticky-menu-fade mobile-header no-sidebar nav-below-header one-container header-aligned-left dropdown-hover full-width-content" itemtype="https://schema.org/WebPage" itemscope>
-      	
-      <nav id="mobile-header" itemtype="https://schema.org/SiteNavigationElement" itemscope class="main-navigation mobile-header-navigation has-branding has-menu-bar-items">
-         <div class="inside-navigation grid-container grid-parent">
-            <div class="navigation-branding">
-               <p class="main-title" itemprop="headline">
-                  <a href="./index.html" rel="home">
-                  konektorX
-                  </a>
-               </p>
+    <title>KonektorX - Dashboard</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
             </div>
-            <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
-               <span class="gp-icon icon-menu-bars">
-                  <svg viewbox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
-                     <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
-                  </svg>
-                  <svg viewbox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
-                     <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
-                  </svg>
-               </span>
-               <span class="mobile-menu">Menu</span>					
-            </button>
-            <div id="mobile-menu" class="main-nav">
-               <ul id="menu-primary-slideout" class=" menu sf-menu">
-                  <li id="menu-item-55" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55">
-                     <a href="./index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewbox="0 0 256 256">
-                           <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
-                        </svg>
-                     </a>
-                  </li>
-               </ul>
+
+            <span class="logo_name">KonektorX</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Projects</span>
+                </a></li>
+                <li><a href="extensions.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Extensions</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">MyData</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Notifications</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
             </div>
-            <div class="menu-bar-items">
-               <span class="menu-bar-item slideout-toggle hide-on-mobile has-svg-icon">
-                  <a href="#" role="button" aria-label="Open Off-Canvas Panel">
-                     <span class="gp-icon pro-menu-bars">
-                        <svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
-                           <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
-                        </svg>
-                     </span>
-                  </a>
-               </span>
-            </div>
-         </div>
-         <!-- .inside-navigation -->
-      </nav>
-      <!-- #site-navigation -->
-      <nav class="has-branding main-navigation nav-align-right has-menu-bar-items sub-menu-right" id="site-navigation" aria-label="Primary" itemtype="https://schema.org/SiteNavigationElement" itemscope>
-         <div class="inside-navigation grid-container">
-            <div class="navigation-branding">
-               <p class="main-title" itemprop="headline">
-                  <a href="./index.html" rel="home">
-                  konektorX
-                  </a>
-               </p>
-            </div>
-            <button class="menu-toggle" aria-controls="generate-slideout-menu" aria-expanded="false">
-               <span class="gp-icon icon-menu-bars">
-                  <svg viewbox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
-                     <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
-                  </svg>
-                  <svg viewbox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
-                     <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
-                  </svg>
-               </span>
-               <span class="mobile-menu">Menu</span>				
-            </button>
-            <div id="primary-menu" class="main-nav">
-               <ul id="menu-primary-slideout-1" class=" menu sf-menu">
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55">
-                     <a href="./index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewbox="0 0 256 256">
-                           <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
-                        </svg>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="menu-bar-items">
-               <span class="menu-bar-item slideout-toggle hide-on-mobile has-svg-icon">
-                  <a href="#" role="button" aria-label="Open Off-Canvas Panel">
-                     <span class="gp-icon pro-menu-bars">
-                        <svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
-                           <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
-                        </svg>
-                     </span>
-                  </a>
-               </span>
-            </div>
-         </div>
-      </nav>
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
 
 
-      <div class="site grid-container container hfeed" id="page">
-         <div class="site-content" id="content">
-            <div class="content-area" id="primary">
-               <main class="site-main" id="main">
-                  <article id="post-22" class="post-22 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope>
-                     <div class="inside-article">
-                        <div class="entry-content" itemprop="text">
-                           <div class="gb-container gb-container-8ecef3d3">
-                              <div class="gb-container gb-container-84c193bd">
-                                 <h3 class="gb-headline gb-headline-a0631c53 gb-headline-text">Add a New Project </h3>
-                              
-                                 
-<form action="#">
-   <div class="user__details">
-      <div class="input__box">
-         <span class="details">Site Name </span>
-         <input type="text" placeholder="https://www.amazon.com" required>
-      </div>
-      <div class="input__box">
-         <span class="details">API Endpoint URL</span>
-         <input type="email" placeholder="/" required>
-      </div>
-      <div class="input__box">
-         <span class="details">Consumer Key</span>
-         <input type="password" placeholder="********" required>
-      </div>
-      <div class="input__box">
-         <span class="details">
-         Consumer Secret Code</span>
-         <input type="password" placeholder="********" required>
-      </div>
-   </div>
-   <div class="gender__details">
-      <input type="radio" name="gender" id="dot-1">
-      <input type="radio" name="gender" id="dot-2">
-      <input type="radio" name="gender" id="dot-3">
-      <span class="gender__title">e-commerce selection</span>
-      <div class="category">
-         <label for="dot-1">
-         <span class="dot one"></span>
-         <span>Woocommerce</span>
-         </label>
-         <label for="dot-2">
-         <span class="dot two"></span>
-         <span>Shopify</span>
-         </label>
-      </div>
-   </div>
-   <div class="button">
-      <input type="submit" value="Register">
-   </div>
- </form>
+    <!----======== Main Section ======== -->
+        <div class="dash-content">
+            <div class="overview">
 
+          
 
-                              </div>
-                           </div>
+                <div class="responsive-wrapper">
+                    <div class="content-header">
+                        <div class="content-header-intro">
+                            <h2>Add a New Project</h2>
+                            <p>Bellow Select your E-commerce & Sighn the Form</p>
                         </div>
-                     </div>
-                  </article>
-               </main>
+                    </div>
+
+
+                    <div class="content">
+                        <div class="content-panel">
+                            <div class="vertical-tabs">
+                                <a href="#" class="active">View all</a>
+                                <a href="#">Woocommerce</a>
+                                <a href="#">Shopify</a>
+                                <a href="#">Prestashop</a>
+                                <a href="#">Magento</a>
+                            </div>
+                        </div>
+                        <div class="content-main">
+                            <div class="card-grid">
+                             
+                             <!----======== Form Component ======== -->
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
             </div>
-         </div>
-      </div>
 
+        <!----======== End Main Section ======== -->
 
+        </div>
+    </section>
 
-
-      <!-- #footer -->
-      <div class="site-footer grid-container">
-         <footer class="site-info" aria-label="Ιστότοπος" itemtype="https://schema.org/WPFooter" itemscope>
-            <div class="inside-site-info grid-container">
-               <div class="copyright-bar">
-                  <span class="copyright">&copy; 2024 konektorX</span> &bull; Φτιαγμένο με <a href="https://generatepress.com/" itemprop="url">GeneratePress</a>				
-               </div>
-            </div>
-         </footer>
-      </div>
-
-
-      <!-- #slideout -->
-      <nav id="generate-slideout-menu" class="main-navigation slideout-navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope>
-         <div class="inside-navigation grid-container grid-parent">
-            <button class="slideout-exit has-svg-icon">
-               <span class="gp-icon pro-close">
-                  <svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
-                     <path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
-                  </svg>
-               </span>
-               <span class="screen-reader-text">Close</span>
-            </button>
-            <div class="main-nav">
-               <ul id="menu-slideout-menu-slideout" class=" slideout-menu">
-                  <li id="menu-item-126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-126"><a href="./index.html"><i class="ph ph-circuitry"></i> Board</a></li>
-                  <li id="menu-item-125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-125"><a href="./projects.html"><i class="ph ph-file-dashed"></i> Projects</a></li>
-                  <li id="menu-item-124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-124"><a href="./extensions.html"><i class="ph ph-puzzle-piece"></i> Extensions</a></li>
-               </ul>
-            </div>
-            <aside id="nav_menu-1" class="slideout-widget widget_nav_menu">
-               <h2 class="widget-title">Support</h2>
-               <div class="menu-social-widget-slideout-container">
-                  <ul id="menu-social-widget-slideout" class="menu">
-                     <li id="menu-item-74" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a href="#"><i class="ph ph-info"></i>  Support</a></li>
-                     <li id="menu-item-75" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a href="#"><i class="ph ph-file-doc"></i> Docs</a></li>
-                     <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="#"><i class="ph ph-chat-text"></i> Chat</a></li>
-                  </ul>
-               </div>
-            </aside>
-         </div>
-         <!-- .inside-navigation -->
-      </nav>
-
-
-      <!-- #site-navigation -->
-      <div class="slideout-overlay"></div>
-
-
-      <script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><script id="generate-offside-js-extra">var offSide = {"side":"left"};</script>
-      <script src="./wp-content/plugins/gp-premium/menu-plus/functions/js/offside.min.js?ver=2.4.0" id="generate-offside-js"></script>
-      <script id="generate-menu-js-extra">var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Ανοιχτά υπο-μενού","closeSubMenuLabel":"Κλείσιμο υπο-μενού"};</script>
-      <script src="./wp-content/themes/generatepress/assets/js/menu.min.js" id="generate-menu-js"></script>
-   </body>
+    <script src="script.js"></script>
+</body>
 </html>
