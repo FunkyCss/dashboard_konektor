@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/extensions.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <title>KonektorX - Extensions</title> 
 </head>
+
+
 <body>
     <nav>
         <div class="logo-name">
@@ -65,25 +67,19 @@
     </nav>
 
     <section class="dashboard">
+
         <div class="top">
             <i class="uil uil-bars sidebar-toggle"></i>
-
-            <div class="search-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search here...">
-            </div>
-            
+                <div class="search-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search here...">
+                </div>      
             <img src="images/profile.jpg" alt="">
         </div>
-
-
-
+        
         <!----======== Main Section ======== -->
-
         <div class="dash-content">
             <div class="overview">
-
-          
 
                 <div class="responsive-wrapper">
                 
@@ -112,7 +108,7 @@
                                             <span><img src="https://assets.codepen.io/285131/zeplin.svg" /></span>
                                             <h3>SoftOne</h3>
                                         </div>
-                                        <label class="toggle">
+                                        <label class="toggle show-modal">
                                             <input type="checkbox" checked>
                                             <span></span>
                                         </label>
@@ -130,7 +126,7 @@
                                             <span><img src="https://assets.codepen.io/285131/github.svg" /></span>
                                             <h3>Epsilon Net</h3>
                                         </div>
-                                        <label class="toggle">
+                                        <label class="toggle ">
                                             <input type="checkbox" checked>
                                             <span></span>
                                         </label>
@@ -273,13 +269,46 @@
                     </div>
                 </div>
 
-
                 </div>
             </div>
 
         </div>
 
         <!----======== Main Section ======== -->
+        <section class="modal">
+
+            <span class="overlay"></span>
+      
+                <div class="modal-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>Notice</h2>
+                <h3>Are you sure you want to disable the extension?</h3>
+        
+                <div class="buttons">
+                    <button class="close-btn">Yes, Disable</button>
+                    <button>Cancel</button>
+                </div>
+                </div>
+
+          </section>
+
+        <script>
+
+            const section = document.querySelector(".modal"),
+                    overlay = document.querySelector(".overlay"),
+                    showBtn = document.querySelector(".show-modal"),
+                    closeBtn = document.querySelector(".close-btn");
+
+                showBtn.addEventListener("click", () => section.classList.add("active"));
+
+                overlay.addEventListener("click", () =>
+                    section.classList.remove("active")
+                );
+
+                closeBtn.addEventListener("click", () =>
+                    section.classList.remove("active")
+                );
+        </script>
 
 
     </section>
