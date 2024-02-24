@@ -17,6 +17,19 @@
 	 background-color: var(--c-background-secondary);
 	 color: var(--c-text-primary);
 }
+
+
+body.dark{
+	--c-text-primary: #3A3B3C;
+	--c-text-secondary: #242526;
+	--c-text-action: #CCC;
+	--c-accent-primary: #CCC;
+	--c-border-primary: #4D4C4C;
+	--c-background-primary: #fff;
+	--c-background-secondary: #3A3B3C;
+	--c-background-tertiary: #3A3B3C;
+	--c-background-quaternary: #3A3B3C;
+}
  img {
 	 display: block;
 	 max-width: 100%;
