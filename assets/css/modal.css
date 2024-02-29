@@ -10,7 +10,7 @@ button {
   color: #fff;
   padding: 14px 22px;
   border: none;
-  background: #4070f4;
+  background: var(--primary-color);
   border-radius: 6px;
   cursor: pointer;
 }
@@ -61,7 +61,7 @@ button.show-modal,
 }
 .modal-box i {
   font-size: 70px;
-  color: #4070f4;
+  color:var(--primary-color);
 }
 .modal-box h2 {
   margin-top: 20px;
