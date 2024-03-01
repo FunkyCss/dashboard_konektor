@@ -18,7 +18,7 @@ body{
   background: #5372F0;
 }
 .wrapper{
-  width: 380px;
+  width: 600px;
   padding: 40px 30px 50px 30px;
   background: #fff;
   border-radius: 5px;
@@ -140,4 +140,90 @@ form input[type="submit"]{
 }
 form input[type="submit"]:hover{
   background: #2c52ed;
+}
+
+
+
+.pass-field {
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.pass-field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.pass-field input:focus {
+  padding: 0 16px;
+  border: 2px solid #4285F4;
+}
+.pass-field i {
+  right: 18px;
+  top: 50%;
+  font-size: 1rem;
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.content p {
+  margin: 20px 0 10px;
+  color: #333;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.content .requirement-list {
+  margin-top: 1.5rem;
+}
+
+.requirement-list li {
+  font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.requirement-list li i {
+  width: 20px;
+  color: #aaa;
+  font-size: 0.6rem;
+}
+.requirement-list li.valid i {
+  font-size: 1.2rem;
+  color: #4285F4;
+}
+.requirement-list li span {
+  margin-left: 12px;
+  color: #333;
+}
+.requirement-list li.valid span {
+  color: #999;
+}
+
+span 
+{
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .pass-field {
+    height: 55px;
+  }
+  .pass-field input, .content p  {
+    font-size: 1.15rem;
+  }
+  .pass-field i, .requirement-list li {
+    font-size: 1.1rem;
+  }
+  .requirement-list li span {
+    margin-left: 7px;
+  }
 }

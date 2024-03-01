@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KonektorX - Register</title>
     <link rel="stylesheet" href="../../assets/css/login.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <div class="wrapper">
-        <header>Login Form</header>
+        <header>Register Form</header>
         <form action="#">
+          <div class="field name">
+            <div class="input-area">
+              <input type="text" placeholder="Name">
+              <i class="icon fas fa-user"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Name can't be blank</div>
+          </div>
+          <div class="field lastName">
+            <div class="input-area">
+              <input type="text" placeholder="Last Name">
+              <i class="icon fas fa-user"></i> 
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Name can't be blank</div>
+          </div>
           <div class="field email">
             <div class="input-area">
               <input type="text" placeholder="Email Address">
@@ -19,20 +35,47 @@
             </div>
             <div class="error error-txt">Email can't be blank</div>
           </div>
-          <div class="field password">
-            <div class="input-area">
-              <input type="password" placeholder="Password">
-              <i class="icon fas fa-lock"></i>
-              <i class="error error-icon fas fa-exclamation-circle"></i>
+
+  
+            <div class="pass-field field password">
+              <input type="password" placeholder="Create password">
+              <i class="fa-solid fa-eye"></i>
             </div>
-            <div class="error error-txt">Password can't be blank</div>
-          </div>
-          <div class="pass-txt"><a href="#">Forgot password?</a></div>
-          <input type="submit" value="Login">
+
+            
+            <div class="content">
+              <p>Password must contains</p>
+              <ul class="requirement-list">
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 8 characters length</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 number (0...9)</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 lowercase letter (a...z)</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 special symbol (!...$)</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle"></i>
+                  <span>At least 1 uppercase letter (A...Z)</span>
+                </li>
+              </ul>
+            </div>
+        
+
+          <input type="submit" value="register">
         </form>
-        <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+        
       </div>
 
       <script src="../../assets/js/login-validation.js"></script>
+      <script src="../../assets/js/register-validation.js"></script>
 </body>
 </html>
