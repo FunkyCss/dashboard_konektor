@@ -23,14 +23,14 @@ form.onsubmit = (e)=>{
   pInput.onkeyup = ()=>{checkPass();} 
   nInput.onkeyup = ()=>{checkName();} 
 
-  function checkEmail(){ //checkEmail function
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
-    if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
+  function checkEmail(){ 
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
+    if(!eInput.value.match(pattern)){ 
       eField.classList.add("error");
       eField.classList.remove("valid");
       let errorTxt = eField.querySelector(".error-txt");
       (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
-    }else{ //if pattern matched then remove error and add valid class
+    }else{ 
       eField.classList.remove("error");
       eField.classList.add("valid");
     }
@@ -61,9 +61,9 @@ form.onsubmit = (e)=>{
 
 
   //if eField and pField doesn't contains error class that mean user filled details properly
-  if(!eField.classList.contains("error") && !pField.classList.contains("error")){
-    window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
-  }
+  if(!eField.classList.contains("error") && !pField.classList.contains("error") && !nField.classList.contains("error")) {
+    window.location.href = form.getAttribute("action"); 
+}
 }
 
 
