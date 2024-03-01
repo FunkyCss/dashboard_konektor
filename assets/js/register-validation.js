@@ -18,9 +18,9 @@ form.onsubmit = (e)=>{
     pField.classList.remove("shake");
   }, 500);
 
-  eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
-  pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
-  nInput.onkeyup = ()=>{checkName();} //calling checkPassword function on pass input keyup
+  eInput.onkeyup = ()=>{checkEmail();} 
+  pInput.onkeyup = ()=>{checkPass();} 
+  nInput.onkeyup = ()=>{checkName();} 
 
   function checkEmail(){ //checkEmail function
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
@@ -28,7 +28,6 @@ form.onsubmit = (e)=>{
       eField.classList.add("error");
       eField.classList.remove("valid");
       let errorTxt = eField.querySelector(".error-txt");
-      //if email value is not empty then show please enter valid email else show Email can't be blank
       (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
     }else{ //if pattern matched then remove error and add valid class
       eField.classList.remove("error");
@@ -37,10 +36,10 @@ form.onsubmit = (e)=>{
   }
 
   function checkPass(){ //checkPass function
-    if(pInput.value == ""){ //if pass is empty then add error and remove valid class
+    if(pInput.value == ""){ 
       pField.classList.add("error");
       pField.classList.remove("valid");
-    }else{ //if pass is empty then remove error and add valid class
+    }else{ 
       pField.classList.remove("error");
       pField.classList.add("valid");
     }
@@ -48,12 +47,14 @@ form.onsubmit = (e)=>{
 
 
   function checkName(){ //checkName function
-    if(nInput.value == ""){ //if name is empty then add error and remove valid class
+    if(nInput.value == ""){ 
       nField.classList.add("error");
       nField.classList.remove("valid");
       let errorTxt = nField.querySelector(".error-txt");
-      //if name value is not empty then show please enter valid name else show Name can't be blank
       (nInput.value != "") ? errorTxt.innerText = "Please enter a valid name" : errorTxt.innerText = "Name can't  be blank"; 
+    }else{ 
+      nField.classList.remove("error");
+      nField.classList.add("valid");
     }
   }
 
