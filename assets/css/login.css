@@ -170,28 +170,27 @@ form input[type="submit"]:hover{
 .content p {
   margin: 20px 0 10px;
   color: #333;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: left;
 }
 
 .content .requirement-list {
-  margin-top: 1.5rem;
+  margin-top: 1.1rem;
 }
 
 .requirement-list li {
-  font-size: 1.3rem;
   list-style: none;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .requirement-list li i {
   width: 20px;
   color: #aaa;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 .requirement-list li.valid i {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #4285F4;
 }
 .requirement-list li span {
