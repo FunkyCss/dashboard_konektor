@@ -1,8 +1,6 @@
 const form = document.querySelector("form");
 eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
-nField = form.querySelector(".name"),
-nInput = nField.querySelector("input");
 pField = form.querySelector(".password"),
 pInput = pField.querySelector("input");
 
@@ -11,7 +9,6 @@ form.onsubmit = (e)=>{
   //if email and password is blank then add shake class in it else call specified function
   (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
   (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
-  (nInput.value == "") ? nField.classList.add("shake", "error") : checkName();
 
   setTimeout(()=>{ //remove shake class after 500ms
     eField.classList.remove("shake");
@@ -20,7 +17,6 @@ form.onsubmit = (e)=>{
 
   eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
   pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
-  nInput.onkeyup = ()=>{checkName();} //calling checkPassword function on pass input keyup
 
   function checkEmail(){ //checkEmail function
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
@@ -45,18 +41,6 @@ form.onsubmit = (e)=>{
       pField.classList.add("valid");
     }
   }
-
-
-  function checkName(){ //checkName function
-    if(nInput.value == ""){ //if name is empty then add error and remove valid class
-      nField.classList.add("error");
-      nField.classList.remove("valid");
-      let errorTxt = nField.querySelector(".error-txt");
-      //if name value is not empty then show please enter valid name else show Name can't be blank
-      (nInput.value != "") ? errorTxt.innerText = "Please enter a valid name" : errorTxt.innerText = "Name can't  be blank"; 
-    }
-  }
-
 
   //if eField and pField doesn't contains error class that mean user filled details properly
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
