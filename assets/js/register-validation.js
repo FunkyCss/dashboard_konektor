@@ -31,10 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
       eField.classList.add("error");
       eField.classList.remove("valid");
       const errorTxt = eField.querySelector(".error-txt");
-      (eInput.value !== "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
+      errorTxt.innerText = eInput.value ? "Enter a valid email address" : "Email can't be blank";
+      errorTxt.setAttribute("id", "email-error");
+      eInput.setAttribute("aria-invalid", "true");
+      eInput.setAttribute("aria-describedby", "email-error");
     } else {
       eField.classList.remove("error");
       eField.classList.add("valid");
+      eInput.removeAttribute("aria-invalid");
+      eInput.removeAttribute("aria-describedby");
     }
   }
 
