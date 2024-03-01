@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
+    if (e.submitter === submitButton) {
+      alert("ΠΑΠΑΡΙΑ");
+    }
+
     (eInput.value === "") ? eField.classList.add("shake", "error") : checkEmail();
     (pInput.value === "") ? pField.classList.add("shake", "error") : checkPass();
     (nInput.value === "") ? nField.classList.add("shake", "error") : checkName();
