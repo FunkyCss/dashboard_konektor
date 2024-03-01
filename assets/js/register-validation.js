@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const nInput = nField.querySelector("input");
   const pField = form.querySelector(".password");
   const pInput = pField.querySelector("input");
+  const submitButton = form.querySelector("button[type='submit']");
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
