@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500);
   });
 
-  eInput.addEventListener("keyup", checkEmail);
-  pInput.addEventListener("keyup", checkPass);
-  nInput.addEventListener("keyup", checkName);
+  eInput.addEventListener("blur", checkEmail);
+  pInput.addEventListener("blur", checkPass);
+  nInput.addEventListener("blur", checkName);
 
   function checkEmail() {
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
