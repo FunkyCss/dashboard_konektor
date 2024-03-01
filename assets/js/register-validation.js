@@ -47,23 +47,36 @@ document.addEventListener("DOMContentLoaded", function() {
     if (pInput.value === "") {
       pField.classList.add("error");
       pField.classList.remove("valid");
+      const errorTxt = pField.querySelector(".error-txt");
+      errorTxt.innerText = "Password can't be blank";
+      errorTxt.setAttribute("id", "password-error");
+      pInput.setAttribute("aria-invalid", "true");
+      pInput.setAttribute("aria-describedby", "password-error");
     } else {
       pField.classList.remove("error");
       pField.classList.add("valid");
+      pInput.removeAttribute("aria-invalid");
+      pInput.removeAttribute("aria-describedby");
     }
   }
-
+  
   function checkName() {
     if (nInput.value === "") {
       nField.classList.add("error");
       nField.classList.remove("valid");
       const errorTxt = nField.querySelector(".error-txt");
-      (nInput.value !== "") ? errorTxt.innerText = "Please enter a valid name" : errorTxt.innerText = "Name can't  be blank";
+      errorTxt.innerText = "Name can't be blank";
+      errorTxt.setAttribute("id", "name-error");
+      nInput.setAttribute("aria-invalid", "true");
+      nInput.setAttribute("aria-describedby", "name-error");
     } else {
       nField.classList.remove("error");
       nField.classList.add("valid");
+      nInput.removeAttribute("aria-invalid");
+      nInput.removeAttribute("aria-describedby");
     }
   }
+  
 
   if (!eField.classList.contains("error") && !pField.classList.contains("error") && !nField.classList.contains("error")) {
     window.location.href = form.getAttribute("action");
