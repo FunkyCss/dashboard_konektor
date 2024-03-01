@@ -26,11 +26,11 @@ body{
   box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
 }
 .wrapper header{
-  font-size: 35px;
+  font-size: 27px;
   font-weight: 600;
 }
 .wrapper form{
-  margin: 40px 0;
+  margin: 20px 0;
 }
 form .field{
   width: 100%;
@@ -50,6 +50,7 @@ form .field.shake{
     margin-left: 12px;
   }
 }
+
 form .field .input-area{
   height: 50px;
   width: 100%;
