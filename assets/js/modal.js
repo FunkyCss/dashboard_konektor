@@ -1,14 +1,18 @@
-  const section = document.querySelector(".modal"),
-        overlay = document.querySelector(".overlay"),
-        showBtn = document.querySelector(".show-modal"),
-        closeBtn = document.querySelector(".close-btn");
+document.addEventListener("DOMContentLoaded", function() {
 
-      showBtn.addEventListener("click", () => section.classList.add("active"));
+const section = document.querySelector(".modal"),
+overlay = document.querySelector(".overlay"),
+showBtn = document.querySelector(".show-modal"),
+closeBtn = document.querySelector(".close-btn");
 
-      overlay.addEventListener("click", () =>
-        section.classList.remove("active")
-      );
+showBtn.addEventListener("click", () => section.classList.add("active"));
 
-      closeBtn.addEventListener("click", () =>
-        section.classList.remove("active")
-      );
+overlay.addEventListener("click", () =>
+section.classList.remove("active")
+);
+
+closeBtn.addEventListener("click", () =>
+section.classList.remove("active")
+);
+
+  });

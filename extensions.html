@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/extensions.css">
     <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>KonektorX - Extensions</title> 
 </head>
 
@@ -25,36 +25,36 @@
         <div class="menu-items">
             <ul class="nav-links">
                 <li><a href="index.html">
-                    <i class="uil uil-estate"></i>
+                    <i class="fa-solid fa-house"></i>
                     <span class="link-name">Projects</span>
                 </a></li>
                 <li><a href="extensions.html">
-                    <i class="uil uil-files-landscapes"></i>
+                    <i class="fa-solid fa-folder-open"></i>
                     <span class="link-name">Extensions</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-chart"></i>
+                    <i class="fa-solid fa-chart-line"></i>
                     <span class="link-name">Analytics</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
                     <span class="link-name">MyData</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-comments"></i>
+                    <i class="fa-regular fa-message"></i>
                     <span class="link-name">Notifications</span>
                 </a></li>
             </ul>
             
             <ul class="logout-mode">
                 <li><a href="#">
-                    <i class="uil uil-signout"></i>
+                    <i class="fa-solid fa-right-from-bracket"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
 
                 <li class="mode">
                     <a href="#">
-                        <i class="uil uil-moon"></i>
+                        <i class="fa-regular fa-moon"></i>
                     <span class="link-name">Dark Mode</span>
                 </a>
 
@@ -69,9 +69,9 @@
     <section class="dashboard">
 
         <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
+            <i class="fa-solid fa-bars sidebar-toggle"></i>
                 <div class="search-box">
-                    <i class="uil uil-search"></i>
+                    <i class="fa-brands fa-searchengin"></i>
                     <input type="text" placeholder="Search here...">
                 </div>      
             <img src="images/profile.jpg" alt="">
@@ -84,8 +84,8 @@
                 <div class="responsive-wrapper">
                 
                     <div class="title">
-                        <i class="uil uil-files-landscapes"></i>
-                        <span class="text">Extensions</span>
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="text">My Extensions</span>
                     </div>
 
 
@@ -282,27 +282,12 @@
 
           </section>
 
-        <script>
-
-            const section = document.querySelector(".modal"),
-                    overlay = document.querySelector(".overlay"),
-                    showBtn = document.querySelector(".show-modal"),
-                    closeBtn = document.querySelector(".close-btn");
-
-                showBtn.addEventListener("click", () => section.classList.add("active"));
-
-                overlay.addEventListener("click", () =>
-                    section.classList.remove("active")
-                );
-
-                closeBtn.addEventListener("click", () =>
-                    section.classList.remove("active")
-                );
-        </script>
+    
 
 
     </section>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>

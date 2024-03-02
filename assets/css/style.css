@@ -284,9 +284,6 @@ nav.close ~ .dashboard .top{
     position: relative;
     height: 35px;
     width: 35px;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    color: var(--title-icon-color);
     display: flex;
     align-items: center;
     justify-content: center;
