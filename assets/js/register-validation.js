@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   nInput.addEventListener("blur", checkName);
   eInput.addEventListener("blur", checkEmail);
-  pInput.addEventListener("keyup", checkPass);
+  // pInput.addEventListener("keyup", checkPass);
  
 
   function checkEmail() {
@@ -49,22 +49,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  function checkPass() {
-    if (pInput.value === "") {
-      pField.classList.add("error");
-      pField.classList.remove("valid");
-      const errorTxt = pField.querySelector(".error-txt");
-      errorTxt.innerText = "Password can't be blank";
-      errorTxt.setAttribute("id", "password-error");
-      pInput.setAttribute("aria-invalid", "true");
-      pInput.setAttribute("aria-describedby", "password-error");
-    } else {
-      pField.classList.remove("error");
-      pField.classList.add("valid");
-      pInput.removeAttribute("aria-invalid");
-      pInput.removeAttribute("aria-describedby");
-    }
-  }
+  // function checkPass() {
+  //   if (pInput.value === "") {
+  //     pField.classList.add("error");
+  //     pField.classList.remove("valid");
+  //     const errorTxt = pField.querySelector(".error-txt");
+  //     errorTxt.innerText = "Password can't be blank";
+  //     errorTxt.setAttribute("id", "password-error");
+  //     pInput.setAttribute("aria-invalid", "true");
+  //     pInput.setAttribute("aria-describedby", "password-error");
+  //   } else {
+  //     pField.classList.remove("error");
+  //     pField.classList.add("valid");
+  //     pInput.removeAttribute("aria-invalid");
+  //     pInput.removeAttribute("aria-describedby");
+  //   }
+  // }
   
   function checkName() {
     if (nInput.value === "") {
@@ -95,6 +95,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const passwordInput = document.querySelector(".pass-field input");
   const eyeIcon = document.querySelector(".pass-field i");
   const requirementList = document.querySelectorAll(".requirement-list li");
+  const pField = document.querySelector(".password");
+  const pInput = pField.querySelector("input");
 
   const requirements = [
     { regex: /.{8,}/, index: 0 },
@@ -104,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
     { regex: /[A-Z]/, index: 4 },
   ];
 
-  passwordInput.addEventListener("keyup", function(e) {
+  passwordInput.addEventListener("input", function(e) {
     requirements.forEach(item => {
       const isValid = item.regex.test(e.target.value);
       const requirementItem = requirementList[item.index];
@@ -117,6 +119,22 @@ document.addEventListener("DOMContentLoaded", function() {
         requirementItem.firstElementChild.className = "fa-solid fa-circle";
       }
     });
+
+    // Password validation
+    if (pInput.value === "") {
+      pField.classList.add("error");
+      pField.classList.remove("valid");
+      // const errorTxt = pField.querySelector(".error-txt");
+      // errorTxt.innerText = "Password can't be blank";
+      // errorTxt.setAttribute("id", "password-error");
+      pInput.setAttribute("aria-invalid", "true");
+      pInput.setAttribute("aria-describedby", "password-error");
+    } else {
+      pField.classList.remove("error");
+      pField.classList.add("valid");
+      pInput.removeAttribute("aria-invalid");
+      pInput.removeAttribute("aria-describedby");
+    }
   });
 
   eyeIcon.addEventListener("click", function() {
