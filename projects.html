@@ -6,51 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/extensions.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>KonektorX - Projects</title> 
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>KonektorX - Extensions</title> 
 </head>
+
+
 <body>
     <nav>
         <div class="logo-name">
             <div class="logo-image">
                 <img src="images/logo.png" alt="">
             </div>
+
             <span class="logo_name">KonektorX</span>
         </div>
 
         <div class="menu-items">
             <ul class="nav-links">
                 <li><a href="index.html">
-                    <i class="uil uil-estate"></i>
+                    <i class="fa-solid fa-house"></i>
                     <span class="link-name">Projects</span>
                 </a></li>
                 <li><a href="extensions.html">
-                    <i class="uil uil-files-landscapes"></i>
+                    <i class="fa-solid fa-folder-open"></i>
                     <span class="link-name">Extensions</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-chart"></i>
+                    <i class="fa-solid fa-chart-line"></i>
                     <span class="link-name">Analytics</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">myData</span>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span class="link-name">MyData</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-comments"></i>
+                    <i class="fa-regular fa-message"></i>
                     <span class="link-name">Notifications</span>
                 </a></li>
             </ul>
             
             <ul class="logout-mode">
                 <li><a href="#">
-                    <i class="uil uil-signout"></i>
+                    <i class="fa-solid fa-right-from-bracket"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
 
                 <li class="mode">
                     <a href="#">
-                        <i class="uil uil-moon"></i>
+                        <i class="fa-regular fa-moon"></i>
                     <span class="link-name">Dark Mode</span>
                 </a>
 
@@ -63,64 +67,227 @@
     </nav>
 
     <section class="dashboard">
-        <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
 
-            <div class="search-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search here...">
-            </div>
-            
+        <div class="top">
+            <i class="fa-solid fa-bars sidebar-toggle"></i>
+                <div class="search-box">
+                    <i class="fa-brands fa-searchengin"></i>
+                    <input type="text" placeholder="Search here...">
+                </div>      
             <img src="images/profile.jpg" alt="">
         </div>
-
-
-    <!----======== Main Section ======== -->
-    
+        
+        <!----======== Main Section ======== -->
         <div class="dash-content">
             <div class="overview">
 
                 <div class="responsive-wrapper">
-
+                
                     <div class="title">
-                        <i class="uil uil-tachometer-fast-alt"></i>
-                        <span class="text">Add a New Project</span>
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="text">My Extensions</span>
                     </div>
+
 
                     <div class="content">
                         <div class="content-panel">
                             <div class="vertical-tabs">
                                 <a href="#" class="active">View all</a>
-                                <a href="#">Woocommerce</a>
-                                <a href="#">Shopify</a>
-                                <a href="#">Prestashop</a>
-                                <a href="#">Magento</a>
+                                <a href="#">ERP Connections</a>
+                                <a href="#">Courier Providers</a>
+                                <a href="#">Marketing Tools</a>
+                                <a href="#">Emails & SMS</a>
                             </div>
                         </div>
-
                         <div class="content-main">
                             <div class="card-grid">
-                             
-                             <!----======== Form Component ======== -->
+                                
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/zeplin.svg" /></span>
+                                            <h3>SoftOne</h3>
+                                        </div>
+                                        <label class="toggle show-modal">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Collaboration between designers and developers.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
 
-                      
-                    
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/github.svg" /></span>
+                                            <h3>Epsilon Net</h3>
+                                        </div>
+                                        <label class="toggle ">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Link pull requests and automate workflows.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/figma.svg" /></span>
+                                            <h3>ACS courier</h3>
+                                        </div>
+                                        <label class="toggle">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Embed file previews in projects.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/zapier.svg" /></span>
+                                            <h3>Geniki Taxydromiki</h3>
+                                        </div>
+                                        <label class="toggle">
+                                            <input type="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Build custom automations and integrations with apps.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/notion.svg" /></span>
+                                            <h3>MyData</h3>
+                                        </div>
+                                        <label class="toggle">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Embed notion pages and notes in projects.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/slack.svg" /></span>
+                                            <h3>SMS Notifications</h3>
+                                        </div>
+                                        <label class="toggle">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Send notifications to channels and create projects.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/google-chrome.svg" /></span>
+                                            <h3>Google Chrome</h3>
+                                        </div>
+                                        <label class="toggle">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Link your Google account to share bookmarks across your entire team.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
+                                <article class="card">
+                                    <div class="card-header">
+                                        <div>
+                                            <span><img src="https://assets.codepen.io/285131/google-drive.svg" /></span>
+                                            <h3>Google Drive</h3>
+                                        </div>
+                                        <label class="toggle">
+                                            <input type="checkbox">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Link your Google account to share files across your entire team.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">View integration</a>
+                                    </div>
+                                </article>
+
                             </div>
                         </div>
-
                     </div>
                 </div>
-
 
                 </div>
             </div>
 
-        <!----======== End Main Section ======== -->
-
         </div>
+
+        <!----======== Main Section ======== -->
+        <section class="modal">
+
+            <span class="overlay"></span>
+      
+                <div class="modal-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <h2>Notice</h2>
+                <h3>Are you sure you want to disable the extension?</h3>
+        
+                <div class="buttons">
+                    <button class="close-btn">Yes, Disable</button>
+                    <button>Cancel</button>
+                </div>
+                </div>
+
+          </section>
+
+    
+
+
     </section>
 
     <script src="./assets/js/script.js"></script>
-   
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>
