@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const form = document.querySelector("form");
 eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
@@ -47,3 +48,5 @@ form.onsubmit = (e)=>{
     window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
   }
 }
+
+});

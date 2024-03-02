@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
@@ -69,4 +70,5 @@ prevBtnFourth.addEventListener("click", function(event){
   progressCheck[current - 2].classList.remove("active");
   progressText[current - 2].classList.remove("active");
   current -= 1;
+});
 });
