@@ -10,13 +10,6 @@
 	 --c-background-tertiary: #ecf3fe;
 	 --c-background-quaternary: #e9ecf4;
 }
- body {
-	 line-height: 1.5;
-	 min-height: 100vh;
-	 font-family: "Be Vietnam Pro", sans-serif;
-	 background-color: var(--c-background-secondary);
-	 color: var(--c-text-primary);
-}
 
 
 body.dark{
@@ -34,15 +27,8 @@ body.dark{
 	 display: block;
 	 max-width: 100%;
 }
- :focus {
-	 outline: 0;
-}
- .responsive-wrapper {
-	 width: 90%;
-	 max-width: 1280px;
-	 margin-left: auto;
-	 margin-right: auto;
-}
+
+
  .header {
 	 display: flex;
 	 align-items: center;
@@ -131,54 +117,7 @@ body.dark{
  .header-navigation-actions > .button + .icon-button {
 	 margin-left: 1rem;
 }
- .button {
-	 font: inherit;
-	 color: inherit;
-	 text-decoration: none;
-	 display: inline-flex;
-	 align-items: center;
-	 justify-content: center;
-	 padding: 0 1em;
-	 height: 40px;
-	 border-radius: 8px;
-	 line-height: 1;
-	 border: 2px solid var(--c-border-primary);
-	 color: var(--c-text-action);
-	 font-size: 0.875rem;
-	 transition: 0.15s ease;
-	 background-color: var(--c-background-primary);
-}
- .button i {
-	 margin-right: 0.5rem;
-	 font-size: 1.25em;
-}
- .button span {
-	 font-weight: 500;
-}
- .button:hover, .button:focus {
-	 border-color: var(--c-accent-primary);
-	 color: var(--c-accent-primary);
-}
- .icon-button {
-	 font: inherit;
-	 color: inherit;
-	 text-decoration: none;
-	 display: inline-flex;
-	 align-items: center;
-	 justify-content: center;
-	 width: 40px;
-	 height: 40px;
-	 border-radius: 8px;
-	 color: var(--c-text-action);
-	 transition: 0.15s ease;
-}
- .icon-button i {
-	 font-size: 1.25em;
-}
- .icon-button:focus, .icon-button:hover {
-	 background-color: var(--c-background-tertiary);
-	 color: var(--c-accent-primary);
-}
+
  .avatar {
 	 display: inline-flex;
 	 align-items: center;
@@ -207,51 +146,7 @@ body.dark{
 		 margin-bottom: 1rem;
 	}
 }
- .search {
-	 position: relative;
-	 display: flex;
-	 align-items: center;
-	 width: 100%;
-	 max-width: 340px;
-}
- .search input {
-	 font: inherit;
-	 color: inherit;
-	 text-decoration: none;
-	 display: inline-flex;
-	 align-items: center;
-	 justify-content: center;
-	 padding: 0 1em 0 36px;
-	 height: 40px;
-	 border-radius: 8px;
-	 border: 2px solid var(--c-border-primary);
-	 color: var(--c-text-action);
-	 font-size: 0.875rem;
-	 transition: 0.15s ease;
-	 width: 100%;
-	 line-height: 1;
-}
- .search input::placeholder {
-	 color: var(--c-text-action);
-}
- .search input:focus, .search input:hover {
-	 border-color: var(--c-accent-primary);
-}
- .search button {
-	 display: inline-flex;
-	 align-items: center;
-	 justify-content: center;
-	 border: 0;
-	 background-color: transparent;
-	 position: absolute;
-	 left: 12px;
-	 top: 50%;
-	 transform: translateY(-50%);
-	 font-size: 1.25em;
-	 color: var(--c-text-action);
-	 padding: 0;
-	 height: 40px;
-}
+
  .horizontal-tabs {
 	 margin-top: 1.5rem;
 	 display: flex;
@@ -454,7 +349,7 @@ body.dark{
 	 padding: 1rem 1.25rem;
 	 display: flex;
 	 align-items: center;
-	 justify-content: flex-end;
+	 justify-content: space-between;
 	 border-top: 1px solid var(--c-border-primary);
 }
  .card-footer a {
@@ -463,12 +358,3 @@ body.dark{
 	 font-weight: 500;
 	 font-size: 0.875rem;
 }
- html::-webkit-scrollbar {
-	 width: 12px;
-}
- html::-webkit-scrollbar-thumb {
-	 background-color: var(--c-text-primary);
-	 border: 4px solid var(--c-background-primary);
-	 border-radius: 99em;
-}
- 
