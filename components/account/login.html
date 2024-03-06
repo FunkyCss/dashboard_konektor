@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>Login Form</header>
-        <form action="#">
-          <div class="field email">
-            <div class="input-area">
-              <input type="text" placeholder="Email Address">
-              <i class="icon fas fa-envelope"></i>
-              <i class="error error-icon fas fa-exclamation-circle"></i>
-            </div>
-            <div class="error error-txt">Email can't be blank</div>
-          </div>
-          <div class="field password">
-            <div class="input-area">
-              <input type="password" placeholder="Password">
-              <i class="icon fas fa-lock"></i>
-              <i class="error error-icon fas fa-exclamation-circle"></i>
-            </div>
-            <div class="error error-txt">Password can't be blank</div>
-          </div>
-          <div class="pass-txt"><a href="#">Forgot password?</a></div>
-          <input type="submit" value="Login">
-        </form>
-        <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+  <div class="wrapper">
+    <header>Login Form</header>
+    <form id="loginForm" action="#" method="post"> <!-- Added ID "loginForm" and method="post" -->
+      <div class="field email">
+        <div class="input-area">
+          <input type="email" id="email" name="email" placeholder="Email Address"> <!-- Added ID "email" and name "email", also changed type to "email" for validation -->
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt" id="emailError">Email can't be blank</div> <!-- Added ID "emailError" -->
       </div>
-
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" id="password" name="password" placeholder="Password"> <!-- Added ID "password" and name "password" -->
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt" id="passwordError">Password can't be blank</div> <!-- Added ID "passwordError" -->
+      </div>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+  </div>
+  
       <script src="../../assets/js/login-validation.js"></script>
 </body>
 </html>

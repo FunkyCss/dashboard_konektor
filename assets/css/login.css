@@ -13,12 +13,19 @@ body{
   justify-content: center;
   background: #5372F0;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 ::selection{
   color: #fff;
   background: #5372F0;
 }
 .wrapper{
-  width: 550px;
+  width: 500px;
+  max-width: 500px;
   padding: 30px 20px 40px 20px;
   background: #fff;
   border-radius: 5px;

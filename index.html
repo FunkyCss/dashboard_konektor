@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/extensions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>KonektorX - Dashboard</title> 
 </head>
@@ -83,15 +82,41 @@
             
                         <div class="responsive-wrapper">
 
-                            <div class="title">
-                                <i class="fa-regular fa-square-plus"></i>
-                                <span class="text">Add a New Project</span>
-                            </div>
-
                             <div class="content">
-                                <div class="content-main">
+                                <div class="content-main center">
 
-
+                                    <div class="wrapper">
+                                        <header>Add a New Project</header>
+                                        <form id="newProjectForm" action="#" method="post"> <!-- Added ID "newProjectForm" and method="post" -->
+                                          <div class="field name">
+                                            <div class="input-area">
+                                              <input type="text" id="siteName" name="siteName" placeholder="https://www.amazon.com"> <!-- Added ID "siteName" and name "siteName" -->
+                                              <i class="icon fas fa-globe"></i>
+                                              <i class="error error-icon fas fa-exclamation-circle"></i>
+                                            </div>
+                                            <div class="error error-txt" id="siteNameError">Site name can't be blank</div> <!-- Added ID "siteNameError" -->
+                                          </div>
+                                          <div class="field consumerKey">
+                                            <div class="input-area">
+                                              <input type="text" id="consumerKey" name="consumerKey" placeholder="Consumer key"> <!-- Added ID "consumerKey" and name "consumerKey" -->
+                                              <i class="icon fas fa-lock"></i>
+                                              <i class="error error-icon fas fa-exclamation-circle"></i>
+                                            </div>
+                                            <div class="error error-txt" id="consumerKeyError">Consumer key can't be blank</div> <!-- Added ID "consumerKeyError" -->
+                                          </div>
+                                          <div class="field consumerSecret">
+                                            <div class="input-area">
+                                              <input type="text" id="consumerSecret" name="consumerSecret" placeholder="Consumer secret"> <!-- Added ID "consumerSecret" and name "consumerSecret" -->
+                                              <i class="icon fas fa-lock"></i>
+                                              <i class="error error-icon fas fa-exclamation-circle"></i>
+                                            </div>
+                                            <div class="error error-txt" id="consumerSecretError">Consumer secret can't be blank</div> <!-- Added ID "consumerSecretError" -->
+                                          </div>
+                                          <div class="pass-txt"><a href="#">Woocommerce Documentation</a></div>
+                                          <input type="submit" value="Add Project">
+                                        </form>
+                                      </div>
+                                      
                                 </div>
                             </div>
                         </div>
