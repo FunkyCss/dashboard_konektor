@@ -273,6 +273,7 @@ nav.close ~ .dashboard .top{
     border-radius: 50%;
 }
 .dashboard .dash-content{
+    
     padding-top: 50px;
 }
 .dash-content .title{
@@ -293,7 +294,7 @@ nav.close ~ .dashboard .top{
     font-size: 24px;
     font-weight: 500;
     color: var(--text-color);
-    margin-left: 10px;
+
 }
 .dash-content .boxes{
     display: flex;
@@ -304,7 +305,7 @@ nav.close ~ .dashboard .top{
 .dash-content .boxes .box{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     border-radius: 12px;
     width: calc(100% / 3 - 15px);
     padding: 15px 20px;
@@ -464,7 +465,7 @@ nav.close ~ .dashboard .top{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 40px;
   }
   ::selection{
     color: #fff;
