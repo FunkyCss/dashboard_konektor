@@ -20,6 +20,8 @@
     --box2-color: #FFE6AC;
     --box3-color: #E7D1FC;
     --title-icon-color: #fff;
+    --button-primary-color:#0E4BF1;
+    --button-secondary-color:#265df2;
     
     /* ====== Transition ====== */
     --tran-05: all 0.5s ease;

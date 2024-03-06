@@ -1,0 +1,28 @@
+button {
+    font-size: 17px;
+    font-weight: 400;
+    color: var( --panel-color);
+    padding: 14px 22px;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: var( --button-secondary-color);
+  }
+
+  form input[type="submit"]{
+    height: 50px;
+    margin-top: 30px;
+    color: var( --panel-color);
+    padding: 0;
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  form input[type="submit"]:hover{
+    background: var( --button-secondary-color);
+  }
