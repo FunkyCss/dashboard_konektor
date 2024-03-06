@@ -12,6 +12,51 @@ button {
     background-color: var( --button-secondary-color);
   }
 
+  input {
+    font-size: 17px;
+    font-weight: 400;
+    color: var( --panel-color);
+    padding: 14px 22px;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  input:hover {
+    background-color: var( --button-secondary-color);
+  }
+
+  /* Default input styles */
+input {
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--panel-color);
+  transition: var(--tran-03);
+}
+
+
+
+/* Light theme */
+.light-theme input {
+  border-color: var(--border-color);
+  background-color: var(--panel-color);
+}
+
+/* Dark theme */
+.dark-theme input {
+  border-color: var(--border-color);
+  background-color: #333;
+  /* Example dark background color */
+  color: #fff;
+  /* Example dark text color */
+}
+
+
+
   form input[type="submit"]{
     height: 50px;
     margin-top: 30px;
@@ -26,3 +71,4 @@ button {
   form input[type="submit"]:hover{
     background: var( --button-secondary-color);
   }
+

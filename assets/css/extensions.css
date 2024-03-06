@@ -188,7 +188,7 @@ body.dark{
 	 justify-content: space-between;
 	 padding-top: 3rem;
 	 margin-top: -1px;
-	 border-top: 1px solid var(--c-border-primary);
+
 }
  .content-header-intro h2 {
 	 font-size: 1.25rem;
@@ -206,7 +206,7 @@ body.dark{
 	}
 }
  .content {
-	 border-top: 1px solid var(--c-border-primary);
+	
 	 margin-top: 2rem;
 	 display: flex;
 	 align-items: flex-start;
@@ -358,3 +358,4 @@ body.dark{
 	 font-weight: 500;
 	 font-size: 0.875rem;
 }
+
