@@ -10,7 +10,7 @@ nav{
     transition: var(--tran-05);
 }
 nav.close{
-    width: 73px;
+    width: 50px;
 }
 nav .logo-name{
     display: flex;
@@ -139,7 +139,7 @@ body.dark .switch:before{
 
 nav.close ~ .dashboard{
     left: 73px;
-    width: calc(100% - 73px);
+    width: calc(100% - 50px);
 }
 
 nav.close ~ .dashboard .top{
