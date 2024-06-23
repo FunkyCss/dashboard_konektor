@@ -5,199 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/extensions.css">
     <link rel="stylesheet" href="assets/css/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>KonektorX - Extensions</title> 
+    <title>KonektorX - All Projects</title>
 </head>
+<body class="d-flex">
 
 
-<body>
-    <nav>
-        <div class="logo-name">
-            <div class="logo-image">
-                <img src="images/logo.png" alt="">
-            </div>
-
-            <span class="logo_name">KonektorX</span>
-        </div>
-
-        <div class="menu-items">
-            <ul class="nav-links">
-
-                <li><a href="index.html">
+ <!-- Side Nav -->
+    <nav id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-dark" style="height: 100vh;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none">
+            <img src="images/logo.png" alt="" width="40" height="40" class="rounded-circle">
+            <span class="fs-4">KonektorX</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
                     <i class="fa-solid fa-file-circle-plus"></i>
-                    <span class="link-name">New Project</span>
-                </a></li>
-
-                <li><a href="projects.html">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="link-name">My Projects</span>
-                </a></li>
-                <li><a href="extensions.html">
-                    <i class="fa-solid fa-folder-open"></i>
-                    <span class="link-name">Extensions</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span class="link-name">Analytics</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <span class="link-name">MyData</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="fa-regular fa-message"></i>
-                    <span class="link-name">Notifications</span>
-                </a></li>
-            </ul>
-            
-            <ul class="logout-mode">
-                <li><a href="#">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <span class="link-name">Logout</span>
-                </a></li>
-
-                <li class="mode">
-                    <a href="#">
-                        <i class="fa-regular fa-moon"></i>
-                    <span class="link-name">Dark Mode</span>
+                    <span>New Project</span>
                 </a>
-
-                <div class="mode-toggle">
-                  <span class="switch"></span>
-                </div>
             </li>
+            <li>
+                <a href="projects.html" class="nav-link link-light">
+                    <i class="fa-solid fa-house"></i>
+                    <span>My Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="extensions.html" class="nav-link link-light">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Extensions</span>
+                </a>
+            </li>
+            <!-- Additional links -->
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/profile.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Profile</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
-        </div>
+        </div> 
     </nav>
 
-    <section class="dashboard">
 
-        <div class="top">
-            <i class="fa-solid fa-bars sidebar-toggle"></i>
-                <div class="search-box">
-                    <i class="fa-brands fa-searchengin"></i>
-                    <input type="text" placeholder="Search here...">
-                </div>      
-            <img src="images/profile.jpg" alt="">
-        </div>
-        
-        <!----======== Main Section ======== -->
-                <div class="dash-content">
-                    <div class="overview">
-
-                        <div class="responsive-wrapper">
-                        
-                            <div class="title">
-                                <i class="fa-regular fa-square-plus"></i>
-                                <span class="text">My Projects</span>
-                            </div>
-
-                            <div class="content">
-
-                                    <div class="card-grid">
-                                        
-                                        <article class="card">
-                                            <div class="card-header">
-                                                <div>
-                                                    <i class="fa-regular fa-file-code"></i>
-                                                    <h3>amazon.com</h3>
-                                                </div>
-                                                <label class="toggle show-modal">
-                                                    <input type="checkbox" checked>
-                                                    <span></span>
-                                                </label>
-                                            </div>
-                                            <div class="card-body">
-                                                <p>Collaboration between designers and developers.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="#">Edit</a>
-                                                <a href="#">View</a>
-                                                
-                                            </div>
-                                        </article>
-
-                                        <article class="card">
-                                            <div class="card-header">
-                                                <div>
-                                                    <i class="fa-regular fa-file-code"></i>
-                                                    <h3>facebook.com</h3>
-                                                </div>
-                                                <label class="toggle ">
-                                                    <input type="checkbox" checked>
-                                                    <span></span>
-                                                </label>
-                                            </div>
-                                            <div class="card-body">
-                                                <p>Link pull requests and automate workflows.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="#">Edit</a>
-                                                <a href="#">View</a>
-                                            </div>
-                                        </article>
-
-                                        <article class="card">
-                                            <div class="card-header">
-                                                <div>
-                                                    <i class="fa-regular fa-file-code"></i>
-                                                    <h3>youtube.com</h3>
-                                                </div>
-                                                <label class="toggle">
-                                                    <input type="checkbox" checked>
-                                                    <span></span>
-                                                </label>
-                                            </div>
-                                            <div class="card-body">
-                                                <p>Embed file previews in projects.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="#">Edit</a>
-                                                <a href="#">View</a>
-                                            </div>
-                                        </article>
-
-                                        <article class="card">
-                                            <div class="card-header">
-                                                <div>
-                                                    <i class="fa-regular fa-file-code"></i>
-                                                    <h3>ebay.com</h3>
-                                                </div>
-                                                <label class="toggle">
-                                                    <input type="checkbox">
-                                                    <span></span>
-                                                </label>
-                                            </div>
-                                            <div class="card-body">
-                                                <p>Build custom automations and integrations with apps.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="#">Edit</a>
-                                                <a href="#">View</a>
-                                            </div>
-                                        </article>
-
-                                    </div>
-
-                            </div>
-
-
+            <div class="container-fluid" style="width: 90%;">
+            
+                    <div class="top bg-light d-flex justify-content-between align-items-center p-3">
+                        <i class="fa-solid fa-bars sidebar-toggle"></i>
+                        <div class="search-box d-flex align-items-center">
+                            <i class="fa-brands fa-searchengin me-2"></i>
+                            <input type="text" class="form-control" placeholder="Search here...">
                         </div>
-
+                        <i class="fa-solid fa-globe"></i>
                     </div>
-                </div>
+                            
+                       <!-- Button to trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#multiStepModal">
+    Add New Project
+</button>
 
-         </div>
+<!-- Modal Structure -->
+<div class="modal fade" id="multiStepModal" tabindex="-1" aria-labelledby="multiStepModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="multiStepModalLabel">Add New Project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="multiStepForm" novalidate>
+                    <!-- Step 1 -->
+                    <div id="step1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Project Information</h5>
+                                <p>Enter the name of your project and the URL where it will be hosted.</p>
+                                <img src="images/demo.png" alt="Demo" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="projectName" class="form-label">Project Name</label>
+                                    <input type="text" class="form-control" id="projectName" name="projectName" required>
+                                    <div class="invalid-feedback">Please provide a project name.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="projectURL" class="form-label">URL</label>
+                                    <input type="url" class="form-control" id="projectURL" name="projectURL" required placeholder="https://www.example.com">
+                                    <div class="form-text">Please ensure your URL starts with https://</div>
+                                    <div class="invalid-feedback">Please provide a valid URL.</div>
+                                </div>
+                                <button type="button" class="btn btn-primary" id="nextStep">Next</button>
+                            </div>
+                        </div>
+                    </div>
 
-        <!----======== Main Section ======== -->
+                    <!-- Step 2 -->
+                    <div id="step2" class="d-none">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>WooCommerce Credentials</h5>
+                                <p>Enter your WooCommerce API credentials to connect your project.</p>
+                                <img src="/assets/images/demo.webp" alt="Demo" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 position-relative">
+                                    <label for="consumerKey" class="form-label">Κλειδί Καταναλωτή (Woocommerce User API Key)</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="consumerKey" name="consumerKey" required>
+                                        <span class="input-group-text">
+                                            <i class="fa fa-eye" id="toggleConsumerKey" style="cursor: pointer;"></i>
+                                        </span>
+                                    </div>
+                                    <div class="invalid-feedback">Please provide a consumer key.</div>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="consumerSecret" class="form-label">Μυστικός Κωδικός Καταναλωτή (Woocommerce Secret Key)</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="consumerSecret" name="consumerSecret" required>
+                                        <span class="input-group-text">
+                                            <i class="fa fa-eye" id="toggleConsumerSecret" style="cursor: pointer;"></i>
+                                        </span>
+                                    </div>
+                                    <div class="invalid-feedback">Please provide a consumer secret.</div>
+                                    <small>Where to find those? <a href="https://woocommerce.com/document/woocommerce-rest-api/" target="_blank">Check here</a></small>
+                                </div>
+                                <button type="button" class="btn btn-secondary" id="prevStep">Back</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
 
-    </section>
 
-    <script src="./assets/js/script.js"></script>
-    <!-- <script src="./assets/js/modal.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <!-- Initialize Tooltips and Toggle Password Visibility -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    
+        function togglePasswordVisibility(toggleId, inputId) {
+            const toggle = document.getElementById(toggleId);
+            const input = document.getElementById(inputId);
+            
+            toggle.addEventListener('click', function () {
+                const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                input.setAttribute('type', type);
+                this.classList.toggle('fa-eye-slash');
+                this.classList.toggle('active');
+            });
+        }
+    
+        togglePasswordVisibility('toggleConsumerKey', 'consumerKey');
+        togglePasswordVisibility('toggleConsumerSecret', 'consumerSecret');
+    
+        // Form validation
+        const form = document.getElementById('multiStepForm');
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    
+        // Multi-step form navigation
+        document.getElementById('nextStep').addEventListener('click', function() {
+            document.getElementById('step1').classList.add('d-none');
+            document.getElementById('step2').classList.remove('d-none');
+        });
+    
+        document.getElementById('prevStep').addEventListener('click', function() {
+            document.getElementById('step1').classList.remove('d-none');
+            document.getElementById('step2').classList.add('d-none');
+        });
+    });
+    </script>
 </body>
 </html>
