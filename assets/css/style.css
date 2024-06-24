@@ -63,7 +63,7 @@ body {
 
 /* Dash Content */
 .dash-content .title i {
-    font-size: 24px; /* Icon size for visibility */
+    font-size: 1.4rem; /* Icon size for visibility */
 }
 
 .dash-content .boxes .box {
